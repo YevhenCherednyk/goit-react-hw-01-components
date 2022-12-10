@@ -1,0 +1,56 @@
+.statistics {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #636262;
+}
+
+.statList {
+    display: flex;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-basis: calc(100% / 5);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.item:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.item:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.percentage {
+    font-size: 24px;
+    font-weight: 500;
+}

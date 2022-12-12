@@ -13,8 +13,10 @@ const Statistics = ({ title, stats }) => {
             key={id}
             className={css.item}
           >
-            <span className={css.label}>{label}</span>
-            <span className={css.percentage}>{percentage}%</span>
+            {label && <span className={css.label}>{label}</span>}
+            {percentage && (
+              <span className={css.percentage}>{percentage}%</span>
+            )}
           </li>
         ))}
       </ul>
